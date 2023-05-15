@@ -62,6 +62,11 @@ function addJoke() {
     }).then(function(response) {
         console.log('successful post');
         getJokes();
+
+        $('#whoseJokeIn').val('');
+        $('#questionIn').val('');
+        $('#punchlineIn').val('');
+
     }).catch(function(err) {
         alert('server response failed');
         console.log('server response failed', err);
