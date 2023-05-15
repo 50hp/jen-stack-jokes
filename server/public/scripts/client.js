@@ -9,9 +9,7 @@ function onReady() {
 
 }
 
-
-
-
+// function to call sever and recive the jokes array.
 function getJokes() {
 
 
@@ -27,6 +25,7 @@ function getJokes() {
     });
 }
 
+//function to loop through an array and display each object in a list
 function renderJokesToDOM(array) {
 
     $('#outputDiv').empty();
@@ -45,6 +44,7 @@ function renderJokesToDOM(array) {
     }
 }
 
+//function to capture the 3 inputs and send them in a object to the sever.
 function addJoke() {
 
     let whoseJokeIn = $('#whoseJokeIn').val();
